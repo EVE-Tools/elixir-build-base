@@ -1,4 +1,6 @@
 pipeline:
   docker:
     repo: evetools/elixir-build-base
-    tag: ${DRONE_BRANCH}
+    tag:
+      - latest
+      - ${DRONE_BRANCH}
