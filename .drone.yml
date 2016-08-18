@@ -1,8 +1,7 @@
 pipeline:
-  publish:
-    docker:
-      username: $$DOCKER_USER
-      password: $$DOCKER_PASSWORD
-      email: $$DOCKER_EMAIL
-      repo: evetools/elixir-build-base
-      tag: $$BRANCH
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASSWORD
+    email: $$DOCKER_EMAIL
+    repo: evetools/elixir-build-base
+    tag: $$BRANCH
