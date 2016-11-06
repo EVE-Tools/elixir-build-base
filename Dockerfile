@@ -6,7 +6,7 @@ MAINTAINER zweizeichen@element-43.com
 # This is the basic build container for Element43's Elixir-based projects
 #
 
-ENV ELIXIR_VERSION=1.3.2
+ENV ELIXIR_VERSION=1.3.4
 COPY . /root/build
 
 RUN printf "http://mirror.leaseweb.com/alpine/v3.4/main\nhttp://mirror.leaseweb.com/alpine/v3.4/community" > etc/apk/repositories && \
