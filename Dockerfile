@@ -11,6 +11,7 @@ COPY . /root/build
 
 RUN printf "http://mirror.leaseweb.com/alpine/v3.4/main\nhttp://mirror.leaseweb.com/alpine/v3.4/community" > etc/apk/repositories && \
     apk update && \
+    apk upgrade && \
     apk add bzip2-dev libstdc++ erlang erlang-crypto erlang-syntax-tools erlang-parsetools \
       erlang-inets erlang-ssl erlang-public-key erlang-eunit erlang-asn1 erlang-sasl \
       erlang-erl-interface && \
